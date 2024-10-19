@@ -1,0 +1,105 @@
+#invoice-POS {
+  box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+  padding: 5mm; /* Aumenta el padding para hacer las facturas más grandes */
+  width: 100%; 
+  background: #FFF;
+  float: left; /* Añade float para colocarlas en línea */
+  margin-right: 20px; /* Añade margen derecho para separar las facturas */
+  margin-bottom: 20px; /* Añade margen inferior para separar las filas */
+}
+
+
+/* Agrega estas líneas para aumentar el tamaño de la letra */
+#invoice-POS h1,
+#invoice-POS h2,
+#invoice-POS h3,
+#invoice-POS p {
+  font-size: 1em; /* Aumenta el tamaño de la letra */
+  color: #222; /* Color de texto */
+  line-height: 1.5em; /* Altura de línea */
+}
+
+#invoice-POS #top, #invoice-POS #mid, #invoice-POS #bot {
+  /* Targets all id with 'col-' */
+  border-bottom: 1px solid #EEE;
+}
+#invoice-POS #top {
+  min-height: 100px;
+}
+#invoice-POS #mid {
+  min-height: 80px;
+}
+#invoice-POS #bot {
+  min-height: 50px;
+}
+#invoice-POS #top .logo {
+  height: 80px;
+  width: 80px;
+  background: url(https://raw.githubusercontent.com/chechojgb/images/main/conejo.jfif) no-repeat;
+  background-size: 80px 80px;
+  border-radius: 40%;
+}
+#invoice-POS .clientlogo {
+  float: left;
+  height: 60px;
+  width: 60px;
+  background: url(http://michaeltruong.ca/images/client.jpg) no-repeat;
+  background-size: 60px 60px;
+  border-radius: 50px;
+}
+#invoice-POS .info {
+  display: block;
+  margin-left: 0;
+}
+#invoice-POS .title {
+  float: right;
+}
+#invoice-POS .title p {
+  text-align: right;
+}
+#invoice-POS table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#invoice-POS .tabletitle {
+  font-size: 0.5em;
+  background: #EEE;
+}
+#invoice-POS .service {
+  border-bottom: 1px solid #EEE;
+}
+#invoice-POS .item {
+  width: 24mm;
+}
+#invoice-POS .itemtext {
+  font-size: 0.5em;
+}
+#invoice-POS #legalcopy {
+  margin-top: 5mm;
+}
+#invoice-POS:nth-child(3n) {
+  clear: both;
+}
+
+.factura_individual_usu{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(324px, 0fr));
+  grid-gap: 30px;
+  margin: 20px 0px 0 20px;
+}
+
+@media(max-width: 800px){
+  #invoice-POS{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .factura_individual_usu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(289px, 1fr));
+    margin: 20px;
+  }
+}
+
+/* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px; */

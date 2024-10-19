@@ -1,0 +1,244 @@
+/* Estilos para el body */
+.bg-gray-800 {
+    background: #fff !important ;
+}
+
+.text-white {
+    color: #000 !important;
+    font-family: londrina solid;
+}
+
+.text-whites {
+    color: #ffffff !important;
+    font-family: londrina solid;
+}
+
+/* Estilos para la navegación */
+.bg-gray-900 {
+    background-color: #ff006f !important;
+    
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.max-w-6xl {
+    max-width: 90rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.sm\\:flex-row {
+    flex-direction: row;
+}
+
+.gap-8 {
+    gap: 2rem;
+}
+
+.items-center {
+    align-items: center;
+}
+
+/* Estilos para la barra de búsqueda */
+.relative {
+    position: relative;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.bg-gray-700 {
+    background-color: #ff0000 !important;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.pl-10 {
+    padding-left: 2.5rem;
+}
+
+.transition {
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.focus\\:w-full:focus {
+    width: 100%;
+}
+
+/* Estilos para el ícono de búsqueda */
+.left-2 {
+    left: 0.5rem;
+    color:#000;
+}
+
+.top-1\/2 {
+    top: 50%;
+}
+
+.-translate-y-1\/2 {
+    transform: translateY(-50%);
+}
+
+/* Estilos para el ícono de carrito */
+.text-center {
+    text-align: center;
+}
+
+/* Estilos para los productos */
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.bg-red-500 {
+    background-color: #e08eb1 !important;
+}
+
+.w-4 {
+    width: 1rem;
+}
+
+.h-4 {
+    height: 1rem;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.-top-2 {
+    top: -0.5rem;
+}
+
+.-right-2 {
+    right: -0.5rem;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+/* Estilos para la sección principal */
+.flex-col {
+    flex-direction: column;
+}
+
+.md\\:flex-row {
+    flex-direction: row;
+}
+
+.space-y-4 {
+    margin-bottom: 1rem;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-xl {
+    font-size: 2rem;
+    font-family: lorian solid;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.max-w-10rem {
+    max-width: 10rem;
+}
+
+
+/* Estilos para los filtros */
+.space-y-2 {
+    margin-bottom: 0.5rem;
+}
+
+.check {
+    /* Estilos específicos para los checkbox */
+}
+
+/* Estilos para los productos */
+.w-full {
+    width: 100%;
+}
+
+.max-w-4xl {
+    max-width: 48rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sm\\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.xl\\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.place-content-center {
+    justify-content: center;
+    align-content: center;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+
+.hola{
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 0.75rem;
+    padding-bottom: 30px;
+}
+.products-wrapper {
+    width: 100%; /* Cambiar a 100% para ocupar todo el ancho disponible */
+    max-width: 5000px; /* Ajustar el ancho máximo según sea necesario */
+    margin: 0 auto; /* Centrar horizontalmente */
+    display: grid; /* Mostrar como rejilla */
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* Cambiar a 5 columnas */
+    gap: 6px; /* Ajustar el espacio entre elementos según sea necesario */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+  }
+  
+

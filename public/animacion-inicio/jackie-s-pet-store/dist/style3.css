@@ -1,0 +1,153 @@
+
+
+.container-opinion {
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section, .right-section {
+    padding: 20px;
+}
+
+.left-section {
+    width: 65%;
+    border-right: 1px solid #eee;
+}
+
+.right-section {
+    width: 35%;
+}
+
+.product-details h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.product-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.delivery-status {
+    background-color: #f0f9ff;
+    border: 1px solid #d1ecf1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.date {
+    font-weight: bold;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.rating-section, .help-section {
+    margin-top: 20px;
+    width: 70%;
+}
+
+.stars span {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ddd;
+}
+
+.stars span:hover, .stars span:hover ~ span {
+    color: #ffc107;
+}
+
+.help-section button {
+    display: block;
+    width: 100%;
+    background-color: #6c757d;
+    margin-top: 10px;
+}
+
+.purchase-summary h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.discount {
+    color: #dc3545;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.payment-method {
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+.right-section a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.right-section a:hover {
+    text-decoration: underline;
+}
+
+.no-class{
+    border: none!important;
+    background-color: inherit!important;
+}
+.no-class:hover{
+    background-color: inherit!important;
+}
+
+.califacion-succes{
+    display: flex;
+    justify-content: space-evenly;
+}
+.padding-2{
+    padding: 5px!important;
+}
+
+.width-button{
+    width: 100%;
+    text-align: center;
+}

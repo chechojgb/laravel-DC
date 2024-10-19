@@ -1,0 +1,45 @@
+
+
+.faces {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.face {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.face-1 {
+    background-image: url('/storage/animacion-inicio/Uploads/servicios/1estrella.png'); /* Asegúrate de que la ruta sea correcta */
+}
+
+
+.face-2 {
+    background-image: url('/storage/animacion-inicio/Uploads/servicios/2estrellas.png'); /* Reemplaza con la URL de tu imagen */
+}
+
+.face-3 {
+    background-image: url('/storage/animacion-inicio/Uploads/servicios/3estrellas.png'); /* Reemplaza con la URL de tu imagen */
+}
+
+.face-4 {
+    background-image: url('/storage/animacion-inicio/Uploads/servicios/4estrellas.png'); /* Reemplaza con la URL de tu imagen */
+}
+
+.face-5 {
+    background-image: url('/storage/animacion-inicio/Uploads/servicios/5estrellas.png'); /* Reemplaza con la URL de tu imagen */
+}
+
+.face:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+

@@ -1,0 +1,122 @@
+
+.seccion-formulario  input,
+.seccion-formulario  select,
+.seccion-formulario  textarea {
+  background: #f9fafb; 
+  font-family: inherit; 
+  font-size: 0.875rem; 
+  border-bottom-width: 1px; 
+  border-radius: 0.25rem; 
+  border: 1px solid #c0c4c9; 
+  border-bottom: 2px solid #c0c4c9; 
+  color: #333; 
+  width: 100%;
+  padding: 0.75rem;
+  height: 2.75rem; 
+  line-height: normal;
+  transition: all 0.15s ease-out;
+}
+
+
+.seccion-formulario > input {
+  background-color: #f9fafb;
+  border-bottom-color: #c0c4c9; 
+  border-color: #c0c4c9; 
+  color: #333; 
+}
+.seccion-formulario{
+  margin-top: 10px;
+}
+
+
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+
+
+.contenedor-formulario {
+  margin: 0 auto;
+  display: flex;
+  max-width: 700px;
+}
+@media only screen and (max-width: 860px) {
+  .contenedor-formulario {
+    margin: 0 auto;
+    display: flex;
+    max-width: 700px;
+    width: 96%;
+  }
+}
+
+.contenedor-formulario-content{
+  width: 100% !important;
+  border-radius: 10px; 
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+  margin-bottom: 30px;
+}
+.contenedor-formulario .contenedor-formulario-navigation {
+  width: 18em;
+  padding: 2em 1em;
+}
+
+@media only screen and (max-width: 750px) {
+  .contenedor-formulario .contenedor-formulario-navigation {
+    display: none;
+  }
+}
+
+
+
+.contenedor-formulario .contenedor-formulario-content {
+  padding: 1em 1em;
+  max-width: 100%;
+}
+.seccion-formulario > label{
+  font-family: "Open Sans", sans-serif !important;
+  color: #747d88 !important;
+}
+@media only screen and (min-width: 750px) {
+  .contenedor-formulario .contenedor-formulario-content {
+    width: calc(100% - 18em);
+  }
+}
+
+
+
+
+.section-principal-formulario{
+  background: #fff;
+  padding: 2em;
+  border-radius: 0.75rem;
+  line-height: 1.6;
+  overflow: hidden;
+  position: relative;
+  font-size: 0.875rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding-bottom: 0px;
+}
+
+.section-principal-formulario h1{
+  font-weight: 500;
+  font-size: 1.70rem;
+  color: #000;
+  margin-bottom: 0.75rem;
+}
+
+
+.section-principal-formulario legend{
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+
+
+.enviar_radicadop{
+  text-align: center;
+}
+
+.enviar_radicadop > button{
+  margin: 0 !important;
+}

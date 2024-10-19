@@ -1,0 +1,63 @@
+.header-contacto {
+    text-align: center;
+    color: #212121;
+    background: #e08eb1;
+    width: 100%;
+}
+
+.header-contanto .container-contacto {
+    padding-top: 160px;
+    padding-bottom: 50px; 
+}
+
+
+.titulo-header {
+    padding-top: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Ubuntu',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.subtitulo-header {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+@media(min-width:768px) {
+    .header-contacto .container-contacto {
+        padding-top: 140px;
+        padding-bottom: 100px;
+    }
+    .titulo-header {
+        font-size: 4.75em;
+    }
+
+    .subtitulo-header {
+        font-size: 1.75em;
+    }
+}
+
+.canales-atencion{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.canales-atencion .fa {
+    font-size: 10em;
+    padding: 10px 15px;
+    color:#212121;
+    border-radius:6px;
+    border-radius:5px 20px 5px;;
+    background-color:#e08eb1;
+}
+
+.row-contacto{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+

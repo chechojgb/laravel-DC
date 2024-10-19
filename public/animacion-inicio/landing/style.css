@@ -1,0 +1,1184 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.cuerpoLanding {
+    line-height: 2;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+ 
+    margin: 0 auto;
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+    overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
+    --dark: #e08eb1;
+    --dust: #ebe3df;
+    --pumpkin: #f26b10;
+    --pink: #db5387;
+    --violet: #7d41d8;
+    color: var(--dark);
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+section {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 150px;
+}
+
+.section-wrapper {
+    width: 40%;
+}
+
+section h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1em;
+}
+
+section h3,
+section p {
+    margin-bottom: 40px;
+}
+
+section p:last-of-type {
+    margin-bottom: 30px;
+}
+
+/* ---| BACKGROUND DESIGNS \--- */
+
+
+/* designs HEADER */
+
+.header-bg-design {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+}
+
+.nav-bg-design {
+    position: relative;
+    top: 0;
+    z-index: -1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-circles-dust {
+    position: absolute;
+    top: -30vw;
+    right: 12vw;
+    width: 45vw;
+    max-width: 540px;
+    height: 45vw;
+    max-height: 540px;
+    border-radius: 50%;
+    background-color: var(--dark);
+}
+
+.header-circles-big {
+    position: absolute;
+    top: -25vw;
+    right: -35vw;
+    width: 70vw;
+    max-width: 840px;
+    height: 70vw;
+    max-height: 840px;
+    border-radius: 50%;
+    background-color: var(--dark);
+    overflow: hidden;
+}
+
+.header-circles-big::before {
+    content: "";
+    position: absolute;
+    bottom: 43%;
+    right: 68%;
+    width: 65%;
+    padding-top: 65%;
+    border-radius: 50%;
+    background-color: var(--pumpkin);
+}
+
+.header-circles-big::after {
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    right: 30%;
+    width: 25%;
+    padding-top: 25%;
+    border-radius: 50%;
+    background-color: var(--dust);
+}
+
+.visa-card {
+    position: absolute;
+    right: 5vw;
+    top: 20vw;
+    width: 30vw;
+    max-width: 360px;
+    height: 20vw;
+    max-height: 240px;
+    background-color: var(--violet);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.visa-card::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    padding-top: 70%;
+    border-radius: 50%;
+    top: -45%;
+    right: -25%;
+    background-color: #6233a8;
+}
+
+.visa-card::after {
+    content: "";
+    position: absolute;
+    width: 15%;
+    padding-top: 15%;
+    border-radius: 50%;
+    top: 40%;
+    right: 20%;
+    background-color: var(--pumpkin);
+}
+
+.visa-card .card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.visa-card .card-inner::after {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    content: "**** **** **** 2354";
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    word-spacing: 0.6em;
+    color: #f6f7f8;
+}
+
+.card-logo {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 20%;
+    fill: #f6f7f8;
+}
+
+
+/* designs ENIM */
+
+.enim-bg-design {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.enim-circles {
+    position: absolute;
+    top: -15vw;
+    left: -20vw;
+    width: 70vw;
+    max-width: 840px;
+    height: 70vw;
+    max-height: 840px;
+    border-radius: 50%;
+    background-color: #faf8f8;
+}
+
+.enim-circles::after {
+    content: "";
+    position: absolute;
+    bottom: 25%;
+    left: 35%;
+    width: 30%;
+    padding-top: 30%;
+    border-radius: 50%;
+    background-color: var(--dark);
+}
+
+.profile-card {
+    position: absolute;
+    left: 10vw;
+    top: 10vw;
+    width: 32vw;
+    max-width: 380px;
+    height: 55vw;
+    max-height: 660px;
+    background-color: #fff;
+    border-radius: 1vw;
+    box-shadow: 2px 0 25px 0 rgba(0,0,0,0.1);
+}
+
+.profile-card::before {
+    content: "";
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    transform: translateY(50%);
+    width: 60%;
+    padding-top: 36%;
+    border-radius: 8px;
+    background-color: #a9a9b3;
+}
+
+.profile-card::after {
+    content: "";
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    transform: translateY(50%);
+    width: 60%;
+    padding-top: 44%;
+    border-radius: 8px;
+    background-color: hsla(240, 13%, 35%, 0.7);
+}
+
+.master-card {
+    z-index: 1;
+    position: absolute;
+    left: 22%;
+    bottom: 25%;
+    transform: translateY(50%);
+    width: 85%;
+    padding-top: 54%;
+    background-color: var(--dark);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.master-card::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    padding-top: 70%;
+    border-radius: 50%;
+    top: -45%;
+    right: -25%;
+    background-color: var(--dust);
+}
+
+.master-card::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    padding-top: 50%;
+    border-radius: 50%;
+    bottom: 0;
+    left: 10%;
+    transform: translate(-50%, 50%);
+    background-color: #41415e;
+}
+
+.master-card .card-inner {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.master-card .card-inner::after {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    content: "**** **** **** 3468";
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    word-spacing: 0.6em;
+    color: #f6f7f8;
+}
+
+.master-card .card-logo {
+    width: 15%;
+}
+
+.master-card .card-logo path:nth-of-type(2) {
+    fill: #db5387;
+}
+
+.master-card .card-logo path:nth-of-type(3) {
+    fill: #7d41d8;
+}
+
+.profile-content {
+    width: 90%;
+    margin: 8% auto;
+}
+
+.profile-card .fa-arrow-left {
+    font-size: 1.3em;
+    color: #5f5f75;
+}
+
+.user-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.username {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.userpic {
+    width: 15%;
+    padding-top: 15%;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1541182388496-ac92a3230e4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    background-size: 180%;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+}
+
+.bg-search-field {
+    box-shadow: 0 0 10px 0 rgba(50,50,50,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 4%;
+    margin-bottom: 8%;
+    border-radius: 2px;
+    color: #9b9ba7;
+}
+
+.search-placeholder {
+    font-size: 0.8em;
+}
+
+.fa-search {
+    font-size: 1.2em;
+}
+
+.choose-card {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #9b9ba7;
+    margin-bottom: 3%;
+}
+
+.balance {
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.85;
+}
+
+/* designs TEMPOR */
+
+.tempor-bg-design {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.tempor-bg {
+    z-index: -2;
+    position: absolute;
+    left: 50%;
+    top: -8vw;
+    width: 0;
+    height: 50vw;
+    max-height: 600px;
+    border-right: 65vw solid var(--dark);
+    border-top: 10vw solid transparent;
+    border-bottom: 8vw solid transparent;
+    transform: skewX(-15deg);
+}
+
+.tempor-card {
+    z-index: -1;
+    position: absolute;
+    right: 10vw;
+    top: 24vw;
+    width: 24vw;
+    max-width: 288px;
+    height: 15vw;
+    max-height: 180px;
+    background-color: var(--violet);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tempor-card.tempor-master {
+    right: 5vw;
+    top: 18vw;
+    background-color: var(--pumpkin);
+}
+
+.tempor-card.tempor-visa {
+    right: 0;
+    top: 12vw;
+    background-color: var(--pink);
+}
+
+.tempor-card::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    padding-top: 70%;
+    border-radius: 50%;
+    top: -45%;
+    right: -25%;
+    background-color: #6c36bd;
+}
+
+.tempor-card.tempor-master::before {
+    background-color: #935fbd;
+}
+
+.tempor-card.tempor-visa::before {
+    background-color: #c7376e;
+}
+
+.tempor-card::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 50%;
+    padding-top: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+    bottom: -5%;
+    left: 30%;
+    background-color: #8b57d8;
+}
+
+.tempor-card .card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.tempor-card .card-inner::after {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    content: "**** **** **** 2354";
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    word-spacing: 0.6em;
+    color: #f6f7f8;
+}
+
+.tempor-card .card-logo {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 20%;
+    fill: #f6f7f8;
+}
+
+/* designs MINIMA */
+
+.minima-bg-design {
+    bottom: 35%;
+    left: 50vw;
+    transform: translate(-50%, 50%);
+    z-index: -1;
+    width: 100vw;
+    position: absolute;
+    border-left: 120vw solid var(--dark);
+    border-top: 7vw solid transparent;
+    border-bottom: 10vw solid transparent;
+    height: 65vw;
+    max-height: 765px;
+}
+
+/* designs DIUS */
+
+.dius-bg-design {
+    z-index: -1;
+    position: absolute;
+    left: -15vw;
+    width: 100vw;
+    height: 40vw;
+    max-height: 600px;
+    transform: translateY(-10%) perspective(300px) rotateY(-10deg) skewX(-15deg);
+    background-color: #faf8f8;
+    overflow: hidden;
+}
+
+.dius-bg-design::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    transform: translate(-50%, 50%);
+    width: 30%;
+    padding-top: 30%;
+    border-radius: 50%;
+    background-color: #8b57d8;
+}
+
+.dius-bg-design::after {
+    content: "";
+    position: absolute;
+    bottom: 30%;
+    left: 95%;
+    transform: translate(-50%, 50%);
+    width: 20%;
+    padding-top: 30%;
+    border-radius: 50%;
+    background-color: #fd7b25;
+}
+
+
+/* ---| CONTENT \--- */
+
+#header {
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.fixed-nav {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0%;
+}
+
+#header-img {
+    width: 160px;
+}
+
+#nav-bar {
+    width: 40vw;
+    max-width: 560px;
+    min-width: 450px;
+}
+
+#nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+#nav-bar a {
+    color: #f6f7f8;
+    padding: 10px;
+}
+
+.sign-up {
+    border: 1px solid #f6f7f8;
+    border-radius: 4px;
+    padding: 10px 35px;
+    white-space: nowrap;
+}
+
+#nav-bar .sign-up a{
+    padding: 0;
+}
+
+.intro {
+    margin: 0 5%;
+    padding: 150px 0 0;
+}
+
+.intro h1 {
+    width: 60%;
+    max-width: 550px;
+    font-size: 3.4em;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.intro p {
+    width: 400px;
+    margin-bottom:40px;
+}
+
+#form {
+    display: flex;
+    font-size: 0;
+    width: 60%;
+    max-width: 550px;
+}
+
+#submit {
+    color: #f6f7f8;
+    background-color: var(--pink);
+    border: none;
+    border-radius: 0 24px 24px 0;
+    height: 48px;
+    padding: 0 35px;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 1rem;
+}
+
+#email {
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: inherit;
+    width: 100%;
+    height: 48px;
+    padding: 15px 24px;
+    border: 1px solid var(--dust);
+    border-right: none;
+    border-radius:  24px 0 0 24px;
+}
+
+
+.partners-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.partners {
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.partners-row {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mastercard {
+    height: 60px;
+}
+
+.visa {
+    height: 40px;
+}
+
+.paypal {
+    height: 40px;
+}
+
+.mastercard path,
+.visa path,
+.paypal path {
+    fill: #d7d7dc;
+}
+
+#enim,
+#minima {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#minima {
+    justify-content: space-between;
+    align-items: center;
+    color: #f6f7f8;
+}
+
+#video {
+    width: 50%;
+}
+
+.to-story {
+    font-weight: 700;
+    color: var(--violet);
+}
+
+.to-story span {
+    font-size: 1.4em;
+}
+
+#minima .to-story {
+    color: var(--pumpkin);
+}
+
+
+.learn-more {
+    color: #f6f7f8;
+    background-color: var(--pink);
+    border-radius: 4px;
+    padding: 15px 35px;
+}
+
+.learn-more ~ p {
+    margin-top: 30px;
+}
+
+.learn-more ~ p a {
+    color: var(--violet);
+    font-weight: 700;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .header-circles-dust {
+        right: 144px;
+        top: -360px;
+    }
+
+    .header-circles-big {
+        right: -420px;
+        top: -300px;
+    }
+
+    .visa-card {
+        right: 60px;
+        top: 240px;
+    }
+
+    .enim-circles {
+        top: -180px;
+        left: -240px;
+    }
+
+    .profile-card {
+        left: 120px;
+        top: 120px;
+    }
+
+    .tempor-bg {
+        top: -96px;
+        /* right: -240px; */
+        border-top-width: 120px;
+        border-bottom-width: 96px;
+    }
+
+    .tempor-card {
+        right: 120px;
+        top: 288px;
+    }
+
+    .tempor-card.tempor-master {
+        right: 60px;
+        top: 216px;
+        margin-right: 0;
+    }
+
+    .tempor-card.tempor-visa {
+        right: 0;
+        top: 144px;
+    }
+
+    .minima-bg-design {
+        left: 600px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        position: relative;
+        padding-top: 120px;
+        margin-bottom: 60px;
+    }
+
+    .section-wrapper {
+        width: 50%;
+    }
+
+    section h2 {
+        font-size: 2.2em;
+    }
+
+    .intro h1 {
+        font-size: 2.6em;
+    }
+
+    .visa-card {
+        right: 2vw;
+        width: 26vw;
+        height: 17vw;
+        border-radius: 6px;
+    }
+
+    .visa-card .card-inner::after {
+        font-size: 0.8em;
+    }
+
+    .partners-row {
+        width: 90%;
+    }
+
+    .enim-bg-design {
+        left: -5vw;
+    }
+
+    .profile-card {
+        top: 15vw;
+        width: 32vw;
+        height: 55vw;
+    }
+
+    .profile-content {
+        margin: 5% auto;
+    }
+
+    .profile-card .fa-arrow-left {
+        font-size: 1.2em;
+    }
+
+    .user-row {
+        margin-bottom: 6%;
+    }
+
+    .username {
+        font-size: 1.4em;
+    }
+
+    .bg-search-field {
+        padding: 3% 4%;
+        margin-bottom: 8%;
+    }
+
+    .choose-card {
+        font-size: 0.7em;
+    }
+
+    .balance {
+        font-size: 1.1em;
+        line-height: 1.7;
+    }
+
+    .master-card .card-inner::after {
+        font-size: 0.7em;
+    }
+
+    .tempor-bg {
+        left: 55%;
+    }
+
+    .tempor-card .card-inner::after {
+        font-size: 0.6em;
+    }
+
+    #video {
+        width: 45%;
+    }
+
+    .dius-bg-design {
+        top: 15vw;
+        left: -5vw;
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+    .section-wrapper {
+        width: 100%;
+    }
+
+    #nav-bar a {
+        color: var(--dark);
+    }
+
+    .sign-up {
+        border-color: var(--dark);
+    }
+
+    .header-circles-dust {
+        top: 25vw;
+        right: -30vw;
+        width: 45vw;
+        height: 45vw;
+        background-color: var(--violet);
+    }
+
+    .header-circles-big {
+        top: -25vw;
+        right: -35vw;
+        background-color: #faf8f8;
+    }
+
+    .header-circles-big::before {
+        bottom: -36%;
+        right: 6.4%;
+        width: 65%;
+        padding-top: 65%;
+        background-color: var(--pink);
+    }
+
+    .header-circles-big::after {
+        bottom: 50%;
+        right: 60%;
+        width: 25%;
+        padding-top: 25%;
+        background-color: var(--dust);
+    }
+
+    .visa-card {
+        visibility: hidden;
+    }
+
+    .intro h1 {
+        width: 80%;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    #submit {
+        border-radius: 0 24px 24px 0;
+        height: 48px;
+        padding: 0 30px;
+    }
+
+    #enim {
+        margin-top: 360px;
+        padding-top: 180px;
+    }
+
+    .enim-circles {
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        min-width: 500px;
+        min-height: 500px;
+    }
+
+    .profile-card {
+        left: 50vw;
+        top: -300px;
+        transform: translateX(-50%);
+        min-width: 270px;
+        min-height: 460px;
+    }
+
+    #tempor {
+        margin-top: 230px;
+        padding-top: 150px;
+    }
+
+    .tempor-bg {
+        left: 30%;
+        top: -400px;
+        min-height: 400px;
+        border-right: 80vw solid var(--dark);
+    }
+
+    .minima-bg-design {
+        bottom: 45%;
+        left: 50vw;
+        height: 95vw;
+        min-height: 800px;
+    }
+
+    .tempor-card {
+        right: 50%;
+        top: -190px;
+        transform: translateX(50%);
+        width: 24vw;
+        min-width: 230px;
+        height: 15vw;
+        min-height: 140px;
+    }
+
+    .tempor-card.tempor-master {
+        right: 44%;
+        top: -190px;
+        transform: translate(50%, -38%);
+        margin-right: 0;
+    }
+
+    .tempor-card.tempor-visa {
+        right: 38%;
+        top: -190px;
+        transform: translate(50%, -68%);
+        margin-right: 0;
+    }
+
+    .tempor-card .card-inner::after {
+        font-size: 0.7em;
+        margin-right: 0;
+    }
+    .tempor-card{
+        margin-right: 0!important;
+    }
+
+    #minima {
+        flex-direction: column;
+    }
+
+    #video {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .dius-bg-design {
+        left: 50%;
+        width: 140vw;
+        height: 60vw;
+        min-height: 500px;
+        transform: translate(-50%, -10%) perspective(300px) rotateY(-10deg) skewX(-15deg);
+    }
+
+    .dius-bg-design::before {
+        visibility: hidden;
+    }
+
+    .dius-bg-design::after {
+        visibility: hidden;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .nav-container {
+        width: 90%;
+        height: 150px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0% 30px;
+    }
+
+    #nav-bar {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #header {
+        margin-bottom: 100px;
+    }
+
+    .nav-container {
+        height: unset;
+        justify-content: unset;
+    }
+
+    #header-img {
+        width: 120px;
+        align-self: flex-start;
+    }
+
+    #nav-bar {
+        height: 200px;
+    }
+
+    #nav-bar ul{
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .sign-up {
+        padding: 8px 35px;
+    }
+
+    .intro {
+        padding-top: 300px;
+    }
+
+    .intro h1 {
+        width: 100%;
+        font-size: 2em;
+    }
+
+    .intro p {
+        width: 100%;
+    }
+
+    #form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #submit {
+        border-radius: 24px;
+        font-size: 1rem;
+    }
+
+    #email {
+        border-right: 1px solid var(--dust);
+        border-radius:  24px;
+        margin-bottom: 20px;
+    }
+
+    .partners-row {
+        width: 100%;
+    }
+
+    .mastercard {
+        height: 40px;
+    }
+
+    .visa {
+        height: 25px;
+    }
+
+    .paypal {
+        height: 25px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    #enim {
+        padding-top: 280px;
+    }
+
+    .profile-card {
+        top: -250px;
+    }
+
+    #tempor {
+        margin-top: 100px;
+        padding-top: 280px;
+    }
+
+}

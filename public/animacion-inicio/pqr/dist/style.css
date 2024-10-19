@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+.principal {
+  width: 100%;
+  height: 100%;
+  padding: 0px 8%;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+
+.tituloServicio {
+  margin-top: 180px;
+  margin-bottom: 60px;
+  font-weight: 600;
+  border-bottom: 5px solid #e08eb1; 
+  padding-bottom: 5px;
+  max-width: 360px;
+}
+
+ 
+
+
+.filita {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.servicios-d {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.5s, background 0.5s;
+  height: 100%;
+}
+
+@media only screen and (max-width: 860px) {
+  .servicios-d {
+    margin: 0 !important;
+    margin-top: 30px !important;
+    
+  }
+}
+
+.servicios-d i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #5e434f;
+}
+
+.servicios-d h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: inherit;
+}
+
+.servicios-d:hover {
+  background: #e08eb1;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+
+.servicios-d:hover i {
+  color: #fff;
+}
+.servicios-d:hover p {
+  color: #fff;
+}
+
+.sombra-servicio{
+  background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}

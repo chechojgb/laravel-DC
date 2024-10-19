@@ -1,0 +1,139 @@
+
+
+.containerr {
+  padding: 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.cardf-wrap {
+  margin: 10px !important;
+  transform: perspective(800px);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.cardf-wrap:hover .cardf-info {
+  transform: translateY(0);
+}
+.cardf-wrap:hover .cardf-info p {
+  opacity: 1;
+}
+.cardf-wrap:hover .cardf-info, .cardf-wrap:hover .cardf-info p {
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.cardf-wrap:hover .cardf-info:after {
+  transition: 5s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 1;
+  transform: translateY(0);
+}
+.cardf-wrap:hover .cardf-bg {
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 0.8;
+}
+.cardf-wrap:hover .cardf {
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+}
+
+.cardf {
+  position: relative !important;
+  flex: 0 0 240px !important;
+  width: 240px !important;
+  height: 320px !important;
+  background-color: #333 !important;
+  overflow: hidden !important;
+  border-radius: 10px !important;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px !important;
+  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
+}
+.cardfs {
+  position: relative;
+  flex: 0 0 240px;
+  background-color: #e2e2e2;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.cardf-bg {
+  box-sizing: content-box !important;
+  opacity: 0.5;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  pointer-events: none;
+}
+
+.cardf-info {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  color: #fff ;
+  transform: translateY(40%);
+  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.cardf-info p {
+  color: white;
+  opacity: 0;
+  text-shadow: black 0 2px 3px;
+  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.cardf-info * {
+  position: relative;
+  z-index: 1;
+}
+.cardf-info:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  background-blend-mode: overlay;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.cardf-info h1 {
+  color: white;
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+}
+
+.titlee {
+  font-family: "Playfair Display";
+  font-size: 50px;
+  font-weight: 700;
+  color: #5D4037;
+  text-align: center;
+  margin-top: 120px;
+}
+
+
+
+.fixed-top {
+  transition: 0.5s;
+  background: var(--bs-white);
+  border: 0;
+}
+
+.section {
+  padding: 20px 0;
+  background-color: #fff;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - nice-forms.css</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../pqr/dist/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="contenedor-formulario">
+
+  <main class="contenedor-formulario-content">
+
+
+    <section class="section-principal-formulario">
+      <h1>
+        Petición
+      </h1>
+      <p>
+        Solicita información o asistencia sobre nuestros productos y servicios. Estamos aquí para responder a tus preguntas y ofrecerte el soporte que necesites.
+      </p>
+
+      <div class="seccion-formulario">
+        <label>Nombre</label>
+        <input type="text" placeholder="Tu nombre" value="" class="icon-left" />
+      </div>
+
+      <div class="seccion-formulario">
+        <label>Correo electronico</label>
+        <input type="email" placeholder="dasdas@hotmail.com" value="" class="icon-left" />
+      </div>
+
+      <legend>Detalles de la Petición</legend>
+
+      <div class="seccion-formulario">
+        <label>Motivo</label>
+        <select class="" id="motivo" name="motivo" required>
+          <option value="" disabled selected>Seleccionar</option>
+          <option value="producto">Producto</option>
+          <option value="envio">Envío</option>
+          <option value="cuenta">Cuenta</option>
+        </select>
+      </div>
+
+      <div class="seccion-formulario">
+        <label for="descripcion">Descripción o Comentarios: </label>
+        <textarea  name="descripcion" placeholder="Proporcione detalles adicionales..." rows="4" style="height: 100px;"></textarea>
+      </div>
+
+      <div class="seccion-formulario">
+        <label for="archivo">Adjuntar Archivo: </label>
+        <input type="file" class="form-control-file" id="archivo" name="archivo">
+      </div>
+
+      <div class="servicios-d" style="margin: 20px 120px 0px;">
+        <i class="fas fa-file-contract"></i>
+        <h2>Enviar tu petición</h2>
+
+      </div>
+
+      
+
+
+
+    </section>
+
+  </main>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

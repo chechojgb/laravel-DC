@@ -1,0 +1,44 @@
+services:
+  app:
+    image: php:8.2-fpm
+    container_name: decroche_app
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - decroche_network
+    command: >
+      sh -c "apt-get update &&
+             apt-get install -y libpq-dev &&
+             docker-php-ext-install pdo pdo_mysql &&
+             php-fpm"
+
+  nginx:
+    image: nginx:alpine
+    container_name: server_decroche
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - decroche_network
+
+  db:
+    image: mysql:8.0
+    container_name: db_decroche
+    environment:
+      MYSQL_ROOT_PASSWORD: 5209        # Contraseña del usuario root
+      MYSQL_DATABASE: decroche          # Base de datos a crear
+      MYSQL_USER: laraveluser           # Nombre del usuario no root
+      MYSQL_PASSWORD: laravelpassword
+    ports:
+      - "3307:3306"  
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - decroche_network
+
+volumes:
+  db_data:
+networks:
+  decroche_network:

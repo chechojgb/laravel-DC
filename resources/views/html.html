@@ -1,0 +1,42 @@
+<div class="row g-4 tick">
+  <div class="col-8"></div>
+  <div class="col-sm-8 col-md-7 col-lg-6 col-xl-4 ticket">
+    <div class="bg-light rounded total-factura">
+      <div class="p-4">
+        <h1 class="display-6 mb-4">Total <span class="fw-normal">carrito</span></h1>
+        <div class="d-flex justify-content-between mb-4">
+          <h5 class="mb-0 me-4">Subtotal:</h5>
+          <p class="mb-0">$'.number_format($total, 0 ,'', '.').'</p>
+        </div>
+        <div class="d-flex justify-content-between">
+          <h5 class="mb-0 me-4">Adicionales</h5>
+          <div class="">
+            <p class="mb-0">Iva: $0.00</p>
+          </div>
+        </div>
+        <p class="mb-0 text-end">Envios a toda Colombia.</p>
+      </div>
+      <div class="py-4 mb-4 border-top border-bottom d-flex justify-content-between">
+        <h5 class="mb-0 ps-4 me-4">Total</h5>
+        <p class="mb-0 pe-4">'.number_format($total, 0 ,'', '.').'</p>
+      </div>
+
+      <form id="formPago" action="../../Controllers/procesarCompra.php" method="post">
+        <div class="alert alert-success" style="display: none;">
+          <div class="form-group">
+            <label for="my-input">Correo de contacto:</label>
+            <input id="email" name="email" class="form-control" type="email" placeholder="Porfavor escribe tú correo"
+              required>
+          </div>
+          <small id="emailHelp" class="form-text text-muted">
+            Los productos se enviarán a este correo.
+          </small>
+        </div>
+
+        <button id="btnPagar" name="accion" value="proceder" type="submit"
+          class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4"
+          type="button">Proceder al pago</button>
+      </form>
+    </div>
+  </div>
+</div>
